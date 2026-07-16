@@ -124,7 +124,7 @@ export const BONUSES: Bonus[] = [
     title: "BÔNUS 1 — PLANO ALIMENTAR ORGANIZADO",
     description: "Sugestões gerais para distribuir as refeições durante os dias da semana e facilitar o planejamento da rotina.",
     value: "R$ 9,90",
-    image: "/src/assets/images/bonuses_composition_1784235009226.jpg", // can display the composition or beautiful cards
+    image: "https://i.ibb.co/6cRQywM2/Chat-GPT-Image-16-de-jul-de-2026-16-41-20.png",
     benefits: [
       "Planejamento semanal",
       "Checklist organizado",

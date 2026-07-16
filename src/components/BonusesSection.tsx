@@ -53,7 +53,7 @@ export default function BonusesSection({ bonusesImg }: BonusesSectionProps) {
               {/* Cover / Image column */}
               <div className="md:w-2/5 relative bg-brand-beige min-h-[220px] md:min-h-auto">
                 <img
-                  src={bonusesImg}
+                  src={bonus.image}
                   alt={bonus.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover absolute inset-0"

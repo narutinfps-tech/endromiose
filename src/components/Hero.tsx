@@ -45,6 +45,21 @@ export default function Hero({ onScrollToOffers }: HeroProps) {
             Tenha novas ideias para cafés da manhã, almoços, jantares, lanches e sobremesas, utilizando receitas fáceis de consultar e ingredientes encontrados com facilidade.
           </motion.p>
 
+          {/* New Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-lg border border-brand-beige/50"
+          >
+            <img 
+              src="https://i.ibb.co/MynCftkm/Chat-GPT-Image-16-de-jul-de-2026-15-38-42.png" 
+              alt="67 Receitas para Endometriose"
+              referrerPolicy="no-referrer"
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
+
           {/* Benefit Bullets (4 icons) */}
           <motion.div
             initial={{ opacity: 0 }}
