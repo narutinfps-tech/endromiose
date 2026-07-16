@@ -1,0 +1,6 @@
+{
+  "name": "Ciclo Leve",
+  "description": "Página de vendas premium para o Ciclo Leve: 67 Receitas Práticas para uma Alimentação Mais Leve e Organizada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

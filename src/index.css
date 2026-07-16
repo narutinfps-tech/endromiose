@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-brand-cream: #FAF6EF;
+  --color-brand-beige: #F1E7D8;
+  --color-brand-sage: #718066;
+  --color-brand-forest: #354A3A;
+  --color-brand-wine: #7D3035;
+  --color-brand-terracotta: #A96355;
+  --color-brand-gold: #C99A4E;
+  --color-brand-dark: #282D29;
+  --color-brand-gray: #666B67;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+}
+
+/* Custom scrollbar to match our premium botanical theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #718066;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #354A3A;
+}
