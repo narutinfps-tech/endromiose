@@ -20,10 +20,14 @@ export default function Guarantee({ onScrollToOffers }: GuaranteeProps) {
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
-            className="w-24 h-24 bg-brand-cream text-brand-forest rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-2 border-brand-gold relative"
+            className="w-32 h-32 md:w-36 md:h-36 bg-brand-cream rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl border border-brand-gold/30 relative overflow-hidden group hover:scale-105 transition-transform duration-300"
           >
-            <div className="absolute inset-1 border border-dashed border-brand-sage rounded-full" />
-            <span className="font-sans font-bold text-lg">7 dias</span>
+            <img 
+              src="https://i.ibb.co/4wrZSRJn/download.jpg"
+              alt="Garantia Incondicional de 7 Dias"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover rounded-full"
+            />
           </motion.div>
 
           {/* Section titles */}
