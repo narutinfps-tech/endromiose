@@ -50,16 +50,16 @@ export default function BonusesSection({ bonusesImg }: BonusesSectionProps) {
                 idx % 2 === 1 ? 'md:flex-row-reverse' : ''
               }`}
             >
-              {/* Cover / Image column */}
-              <div className="md:w-2/5 relative bg-brand-beige min-h-[220px] md:min-h-auto">
-                <img
-                  src={bonus.image}
-                  alt={bonus.title}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover absolute inset-0"
-                />
-                {/* Botanical Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-forest/60 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-white/10" />
+              {/* Cover / Image column with perfect responsive container */}
+              <div className="md:w-2/5 bg-brand-beige/25 flex items-center justify-center p-6 sm:p-8 relative min-h-[250px] sm:min-h-[300px] md:min-h-[340px] border-b md:border-b-0 border-brand-beige/40">
+                <div className="w-full h-full max-h-[240px] sm:max-h-[280px] md:max-h-[300px] flex items-center justify-center">
+                  <img
+                    src={bonus.image}
+                    alt={bonus.title}
+                    referrerPolicy="no-referrer"
+                    className="max-w-full max-h-full object-contain drop-shadow-2xl hover:scale-103 transition-transform duration-500 rounded-lg"
+                  />
+                </div>
                 
                 {/* Float Badge */}
                 <div className="absolute top-4 left-4 bg-brand-wine text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full shadow-md flex items-center gap-1">

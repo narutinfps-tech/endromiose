@@ -137,7 +137,7 @@ export const BONUSES: Bonus[] = [
     title: "BÔNUS 2 — SALADAS LEVES E SABOROSAS",
     description: "Seleção de saladas coloridas e práticas para complementar almoços, jantares e outras refeições.",
     value: "R$ 7,90",
-    image: "/src/assets/images/bonuses_composition_1784235009226.jpg",
+    image: "https://i.ibb.co/MD8Lg16S/Chat-GPT-Image-16-de-jul-de-2026-16-45-36-2.png",
     benefits: [
       "Saladas coloridas",
       "Receitas práticas",
