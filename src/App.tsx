@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import InteractiveCheckoutModal from './components/InteractiveCheckoutModal';
 import AnalyticsPanel from './components/AnalyticsPanel';
 import { Plan } from './types';
-import { Leaf } from 'lucide-react';
+import { Leaf, Clock } from 'lucide-react';
 
 export default function App() {
   const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
@@ -39,6 +39,23 @@ export default function App() {
 
   return (
     <div id="sales-page-wrapper" className="min-h-screen bg-brand-cream text-brand-dark flex flex-col relative selection:bg-brand-sage/30 selection:text-brand-forest">
+      
+      {/* ⚠️ Premium Top Promo Banner */}
+      <div className="w-full bg-brand-wine text-white py-2.5 px-4 shadow-sm relative z-50 overflow-hidden flex items-center justify-center border-b border-brand-gold/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,154,78,0.15),transparent_70%)] pointer-events-none" />
+        <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-center">
+          <Clock size={13} className="text-brand-gold animate-pulse shrink-0" />
+          <p className="font-sans font-extrabold text-[10px] sm:text-xs tracking-wider uppercase flex items-center gap-1.5 leading-none">
+            <span>Oferta disponível por tempo limitado</span>
+            <span className="hidden sm:inline text-brand-gold font-normal">•</span>
+            <span className="hidden sm:inline text-brand-beige/80 text-[10px] lowercase italic font-normal">aproveite o desconto especial</span>
+          </p>
+          <div className="relative flex h-1.5 w-1.5 shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-gold"></span>
+          </div>
+        </div>
+      </div>
       
       <main className="flex-grow">
         {/* 1. Hero / Section 1 */}
